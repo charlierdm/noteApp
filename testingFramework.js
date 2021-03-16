@@ -17,5 +17,8 @@ function it(label, callback ) {
   callback()
 }
 
-let note = new noteApp();
+it('initializes with the users text', function() {
+  var note = new Note('test-note');
+  expect(note.text).toEqual('test-note');
+})
 
