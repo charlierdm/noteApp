@@ -16,3 +16,6 @@ function it(label, callback ) {
   console.log(`Test: ${label}`)
   callback()
 }
+
+let note = new noteApp();
+
