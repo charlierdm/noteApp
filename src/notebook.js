@@ -1,11 +1,11 @@
 'use strict';
 
 class Notebook {
-  constructor(){
+  constructor() {
     this.noteList = []
   }
 
-  addNote(note){
+  addNote(note) {
     this.noteList.push(note)
   }  
 

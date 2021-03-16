@@ -10,14 +10,14 @@
   
   <h1>Single Page Note App</h1>
 
-  <form action="/">
+  <form id="add-note-form">
     Add a note:<br>
-    <textarea id="note-text" rows="4" cols="50" placeholder="Enter text here"></textarea>
-   <br><input type="submit" value="Submit">
+    <textarea id="note-submit" rows="4" cols="50" placeholder="Enter text here"></textarea>
+   <br><input type="submit" value="Submit" id="add-note">
   </form>
 
   <h2>Current Notes</h2>
-  <ul>
+  <ul id="view-notes">
     <li><a href="/">Note 1</a></li>
     <li><a href="/">Note 2</a></li>
     <li><a href="/">Note 3</a></li>

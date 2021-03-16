@@ -17,10 +17,14 @@ function it(label, callback ) {
   callback()
 }
 
+console.log("Note Class tests:")
+
 it('initializes with the users text', function() {
   var note = new Note('test-note');
   expect(note.text).toEqual('test-note');
 })
+
+console.log("Notebook Class tests:")
 
 it('creates a note and can view it', function() {
   var note = new Note('test-note');
