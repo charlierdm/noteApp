@@ -10,22 +10,22 @@
 </head>
 <body>
   
-  <h1>Single Page Note App</h1>
+  <h1>My Notes</h1>
 
   <form id="add-note-form">
-    Add a note:<br>
-    <textarea id="note-submit" rows="4" cols="50" placeholder="Enter text here"></textarea>
+    Create a note:<br><br>
+    <textarea id="note-submit" rows="10" cols="60" placeholder="Enter text here"></textarea>
    <br><input type="submit" value="Submit" id="add-note">
   </form>
 
-  <p id="emojified-text"></p>
-
-  <h2>Current Notes</h2>
-  <ul id="view-notes">
-    <li><a href="/">Note 1</a></li>
-    <li><a href="/">Note 2</a></li>
-    <li><a href="/">Note 3</a></li>
-  </ul>
+  <div class="sidenav">
+    <h2>Current Notes</h2>
+    <ul id="view-notes">
+      <li><a href="/">Note 1</a></li>
+      <li><a href="/">Note 2</a></li>
+      <li><a href="/">Note 3</a></li>
+    </ul>
+  </div>
   
   <script src="src/noteApp.js"></script>
   <script src="src/notebook.js"></script>
