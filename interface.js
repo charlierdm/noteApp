@@ -18,11 +18,14 @@ ready(() => {
       res => emojiNote = res.emojified_text);
 
     // note from form into obj
-    let testNote = new Note(emojiNote)
+    let testNote = new Note(emojiNote) // issue found - emojiData doesn't run until
+    // first click (due to callback nature). Next step - move the function further
+    // down the process e.g. into view notes?
+
     // note added to notebook
     testNotepad.addNote(testNote)
-    // notebook printed
-    // console.log(testNotepad)
+    // notebook printed to console
+    console.log(testNotepad)
 
     updateHTMLList()
 
