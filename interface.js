@@ -11,23 +11,23 @@ ready(() => {
   /* Do things after DOM has fully loaded */ 
   document.querySelector("#add-note").addEventListener("click", (e) => { /* ... */ 
     e.preventDefault()
+    // new note from form
     let note = document.getElementById("note-submit").value;
-    let testNote = new Note(note)
+    // make note have emoji
+    getEmojiData(note).then(response => response.json()).then(
+      res => emojiNote = res.emojified_text);
+
+    // note from form into obj
+    let testNote = new Note(emojiNote)
+    // note added to notebook
     testNotepad.addNote(testNote)
-    console.log(testNotepad)
+    // notebook printed
+    // console.log(testNotepad)
 
     updateHTMLList()
 
   });
 
-  document.querySelector("#emojify-note").addEventListener("click", (e) => { 
-    e.preventDefault()
-    let text = document.getElementById("note-submit").value;
-    getEmojiData(text).then(response => response.json()).then(
-      res => document.querySelector("#emojified-text").textContent = res.emojified_text);
-
-  });
-  
 
 });
 
@@ -57,5 +57,3 @@ function getEmojiData(data) {
 // $(document).ready(function() {
 //   let thermostat = new Thermostat();
 //   updateTemperature();
-
-
