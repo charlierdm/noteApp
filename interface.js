@@ -30,12 +30,6 @@ function updateHTMLList() {
   //add the notes to the html list
   testNotepad.viewNotes().forEach(function(note) {
     let listItem = note.displayNote()
-    document.getElementById('view-notes').innerHTML += `<li><a href="/">${listItem}</a></li>`
+    document.getElementById('view-notes').innerHTML += `<li><a href="/">${listItem}...</a></li>`
 })
 }
-
-// $(document).ready(function() {
-//   let thermostat = new Thermostat();
-//   updateTemperature();
-
-
