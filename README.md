@@ -11,7 +11,6 @@ Written in JavaScript, HTML and CSS, we have developed an app that can create no
 Sticking to the theme of the week, Vanilla JavaScript, we also created our own testing framework in order to follow TDD principles.
 
 
-https://user-images.githubusercontent.com/75075773/111652893-59ec4a00-87ff-11eb-9b43-3c66aa0dabe4.mp
 <img width="399" alt="Screenshot 2021-03-18 at 15 40 31" src="https://user-images.githubusercontent.com/75075773/111654059-52797080-8800-11eb-9819-6bf87ef7dcf1.png">
 
 
