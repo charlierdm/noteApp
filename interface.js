@@ -19,7 +19,7 @@ ready(() => {
     let note = document.getElementById("note-submit").value;
     // make note have emoji
     getEmojiData(note).then(response => response.json()).then(
-      (res) => {
+      res => {
       let emojiNote = res.emojified_text
       // note from form into obj
       let testNote = new Note(emojiNote) // issue found - emojiData doesn't run until
