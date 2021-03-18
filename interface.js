@@ -19,22 +19,22 @@ ready(() => {
     let note = document.getElementById("note-submit").value;
     // make note have emoji
     getEmojiData(note).then(response => response.json()).then(
-      res => emojiNote = res.emojified_text);
+      (res) => {
+      let emojiNote = res.emojified_text
+      // note from form into obj
+      let testNote = new Note(emojiNote) // issue found - emojiData doesn't run until
+      // first click (due to callback nature). Next step - move the function further
+      // down the process e.g. into view notes?
 
-    // note from form into obj
-    let testNote = new Note(emojiNote) // issue found - emojiData doesn't run until
-    // first click (due to callback nature). Next step - move the function further
-    // down the process e.g. into view notes?
+      // note added to notebook
+      testNotepad.addNote(testNote)
+      // notebook printed to console
+      console.log(testNotepad)
 
-    // note added to notebook
-    testNotepad.addNote(testNote)
-    // notebook printed to console
-    console.log(testNotepad)
-
-    updateHTMLList()
-    storeNotes()
-    clearTextBox()
-
+      updateHTMLList()
+      storeNotes()
+      clearTextBox()
+      })
   });
 
 
@@ -85,7 +85,6 @@ function getEmojiData(data) {
   })
 }
 
-=======
 function storeNotes() {
   let noteList = []
   // loop through the notes in the notepad and add them to the blank array
