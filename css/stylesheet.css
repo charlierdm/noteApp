@@ -30,6 +30,10 @@ form {
   text-align: center;
 }
 
+#note {
+  text-align: center;
+}
+
 #add-note-form {
   text-align: center;
   font-size: 20px;
