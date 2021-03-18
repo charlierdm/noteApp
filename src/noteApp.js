@@ -1,5 +1,3 @@
-//contains class/classes
-
 class Note {
   constructor(text) {
     this.text = text
@@ -14,7 +12,6 @@ class Note {
     else {
       return this.text;
     }
-    
   }
 }
 
