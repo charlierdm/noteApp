@@ -4,9 +4,9 @@
 
 ## task
 
-This is our solution to the week 7 challenge at Makers Academy. We worked in a team of 3 to develop a front end only note taking application. 
+This is our solution to the week 7 challenge at Makers Academy. We worked in a team of 3 to develop a front end only note taking application using no frameworks. The app can be run on a Node.js server.
 
-Written in JavaScript, HTML and CSS, we have developed an app that can create notes, display them individually and have utilised an API to enable emoji creation.
+Written in JavaScript, HTML and CSS, we have developed an app that can create notes, display them individually and also utilises an API to enable emoji creation.
 
 Sticking to the theme of the week, Vanilla JavaScript, we also created our own testing framework in order to follow TDD principles.
 
@@ -16,15 +16,22 @@ Sticking to the theme of the week, Vanilla JavaScript, we also created our own t
 
 ## How to use
 
-Enter the following into your command line to get using the noteApp.
+Enter the following into your command line to get using the noteApp. 
+You must have homebrew installed to run the brew command and utilise the package manager
 
 ```
 git clone https://github.com/charlierdm/noteApp.git
 ```
 
 ```
-open index.html
+brew install node
+```
+Now that node is installed, you can run node and serve the noteApp
+```
+node server.js
 ```
 
-This will open your browser and allow you to create notes. They won't be erased when you leave the page as the app is designed to utilise your browsers storage. 
+This will open your browser and allow you to create notes. They won't be erased when you leave the page as the app is designed to utilise your browsers storage, so they will exist until you clear your browsers cache.
+
+Enjoy! 
 
